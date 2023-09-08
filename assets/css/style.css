@@ -31,18 +31,44 @@
     .midline {
         left: 50%;
     }
+
     .dot {
         left: 50%;
     }
 
 }
 
-.gh-image {
+.icon {
     width: 1.8em;
     margin: 1.5px;
+    align-self: center;
 }
 
 .text-justify {
     text-align: justify;
     text-justify: inter-word;
+}
+
+.clickable {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.clickable:hover {
+    transform: scale(1.03);
+}
+
+.icon.clickable:hover {
+    transform: scale(1.2);
+}
+
+.sep::before {
+    content: "·";
+    margin: 0 0.5em;
+}
+
+@media print {
+    .page-break {
+        page-break-after: always;
+    }
 }
