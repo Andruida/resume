@@ -38,7 +38,7 @@
 
 }
 
-.gh-image {
+.icon {
     width: 1.8em;
     margin: 1.5px;
     align-self: center;
@@ -58,6 +58,11 @@
     transform: scale(1.03);
 }
 
-.gh-image.clickable:hover {
+.icon.clickable:hover {
     transform: scale(1.2);
+}
+
+.sep::before {
+    content: "·";
+    margin: 0 0.5em;
 }
